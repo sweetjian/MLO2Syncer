@@ -38,13 +38,13 @@
             this.btnMlFile = new System.Windows.Forms.Button();
             this.cfgMloDataFile = new System.Windows.Forms.TextBox();
             this.btnStart = new System.Windows.Forms.Button();
-            this.cfgListenIP = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.cfgIdleSec = new System.Windows.Forms.NumericUpDown();
             this.cfgListenPort = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.cfgListenIP = new System.Windows.Forms.ComboBox();
             this.contextMenuStrip.SuspendLayout();
             this.panelConfig.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cfgIdleSec)).BeginInit();
@@ -84,10 +84,10 @@
             // 
             // panelConfig
             // 
+            this.panelConfig.Controls.Add(this.cfgListenIP);
             this.panelConfig.Controls.Add(this.btnMlFile);
             this.panelConfig.Controls.Add(this.cfgMloDataFile);
             this.panelConfig.Controls.Add(this.btnStart);
-            this.panelConfig.Controls.Add(this.cfgListenIP);
             this.panelConfig.Controls.Add(this.label3);
             this.panelConfig.Controls.Add(this.label2);
             this.panelConfig.Controls.Add(this.cfgIdleSec);
@@ -126,13 +126,6 @@
             this.btnStart.Text = "已停止..\r\n\r\n点我启动";
             this.btnStart.UseVisualStyleBackColor = true;
             this.btnStart.Click += new System.EventHandler(this.OnStartStop);
-            // 
-            // cfgListenIP
-            // 
-            this.cfgListenIP.Location = new System.Drawing.Point(97, 9);
-            this.cfgListenIP.Name = "cfgListenIP";
-            this.cfgListenIP.Size = new System.Drawing.Size(165, 21);
-            this.cfgListenIP.TabIndex = 0;
             // 
             // label3
             // 
@@ -204,6 +197,14 @@
             this.label4.TabIndex = 3;
             this.label4.Text = "秒关闭MLO，第一次匹配的时候设久一点";
             // 
+            // cfgListenIP
+            // 
+            this.cfgListenIP.FormattingEnabled = true;
+            this.cfgListenIP.Location = new System.Drawing.Point(97, 9);
+            this.cfgListenIP.Name = "cfgListenIP";
+            this.cfgListenIP.Size = new System.Drawing.Size(165, 20);
+            this.cfgListenIP.TabIndex = 5;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -231,7 +232,6 @@
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip;
         private System.Windows.Forms.ToolStripMenuItem 退出ToolStripMenuItem;
         private System.Windows.Forms.Panel panelConfig;
-        private System.Windows.Forms.TextBox cfgListenIP;
         private System.Windows.Forms.NumericUpDown cfgListenPort;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
@@ -241,6 +241,7 @@
         private System.Windows.Forms.NumericUpDown cfgIdleSec;
         private System.Windows.Forms.Button btnStart;
         private System.Windows.Forms.Button btnMlFile;
+        private System.Windows.Forms.ComboBox cfgListenIP;
 
     }
 }

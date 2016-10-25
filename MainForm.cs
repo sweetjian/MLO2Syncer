@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Diagnostics;
 using System.IO;
+using System.Net;
+using System.Net.Sockets;
 using System.Windows.Forms;
 using Sweetjian.MLO2Syncer.Properties;
 
@@ -20,6 +22,15 @@ namespace Sweetjian.MLO2Syncer
         {
             this.Top = Screen.PrimaryScreen.WorkingArea.Height - this.Height;
             this.Left = Screen.PrimaryScreen.WorkingArea.Width - this.Width;
+
+            //列出本机IP
+            string hostName = Dns.GetHostName();  
+            foreach (IPAddress ip in Dns.GetHostAddresses(hostName))
+            {
+                if (ip.AddressFamily == AddressFamily.InterNetworkV6) continue;
+
+                cfgListenIP.Items.Add(ip.ToString());
+            }
 
             Debug.Listeners.Add(new TextBoxListener(tbMsg) {Name = "TextBoxListener"});
 
