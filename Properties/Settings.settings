@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Sweetjian.MLO2Syncer.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ListenIP" Description="监听地址（局域网IP）" Type="System.String" Scope="User">
+      <Value Profile="(Default)">127.0.0.1</Value>
+    </Setting>
+    <Setting Name="ListenPort" Description="监听端口，将转发到21030" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">21031</Value>
+    </Setting>
+    <Setting Name="MloDataFile" Description="MLO2 数据文件 *.ml" Type="System.String" Scope="User">
+      <Value Profile="(Default)">D:\sync.ml</Value>
+    </Setting>
+    <Setting Name="DelayKillMlo" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">15000</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

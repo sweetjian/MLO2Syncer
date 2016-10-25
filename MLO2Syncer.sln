@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MLO2Syncer", "MLO2Syncer.csproj", "{12BED610-36E7-4645-8DBC-7EA0C1453A71}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{12BED610-36E7-4645-8DBC-7EA0C1453A71}.Debug|x86.ActiveCfg = Debug|x86
+		{12BED610-36E7-4645-8DBC-7EA0C1453A71}.Debug|x86.Build.0 = Debug|x86
+		{12BED610-36E7-4645-8DBC-7EA0C1453A71}.Release|x86.ActiveCfg = Release|x86
+		{12BED610-36E7-4645-8DBC-7EA0C1453A71}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
